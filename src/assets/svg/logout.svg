@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.414" height="30.491" viewBox="0 0 33.414 30.491">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e004b;
+      }
+    </style>
+  </defs>
+  <g id="logout_3_" data-name="logout (3)" transform="translate(0 -22.397)">
+    <g id="Group_2" data-name="Group 2" transform="translate(9.737 34.142)">
+      <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+        <path id="Path_41" data-name="Path 41" class="cls-1" d="M172.459,205.059l-3.575-2.521a.98.98,0,0,0-1.543.8v1.542H150.174a.979.979,0,1,0,0,1.958H167.34v1.542a.98.98,0,0,0,1.543.8l3.575-2.521A.981.981,0,0,0,172.459,205.059Z" transform="translate(-149.195 -202.358)"/>
+      </g>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(0 22.397)">
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_42" data-name="Path 42" class="cls-1" d="M28.093,43.928a.979.979,0,0,0-1.338.357,13.287,13.287,0,1,1,0-13.286.979.979,0,1,0,1.695-.98,15.245,15.245,0,1,0,0,15.247A.979.979,0,0,0,28.093,43.928Z" transform="translate(0 -22.397)"/>
+      </g>
+    </g>
+  </g>
+</svg>
