@@ -1,25 +1,59 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Login from "../views/Login.vue";
+import Launchpad from "../views/Launchpad.vue";
+import Home from "../views/launchpad/Home.vue";
+import CreateClient from "../views/launchpad/CreateClient.vue";
+import ManageClients from "../views/launchpad/ManageClients.vue";
+import Reports from "../views/launchpad/Reports.vue";
+import Dashboard from "../views/launchpad/Dashboard.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    redirect: "/login",
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: "/login",
+    name: "login",
+    component: Login,
+    props: true,
+  },
+  {
+    path: "/launchpad",
+    name: "Launchpad",
+    component: Launchpad,
+    props: true,
+    children: [
+      {
+        // redirect to default home page
+        path: "",
+        component: Home,
+      },
+      {
+        path: "/home",
+        component: Home,
+      },
+      {
+        path: "createclient",
+        component: CreateClient,
+      },
+      {
+        path: "manageclients",
+        component: ManageClients,
+      },
+      {
+        path: "reports",
+        component: Reports,
+      },
+      {
+        path: "dashboard",
+        component: Dashboard,
+      },
+    ],
+  },
+];
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
-export default router
+export default createRouter({
+  history: createWebHistory(),
+  routes,
+});
