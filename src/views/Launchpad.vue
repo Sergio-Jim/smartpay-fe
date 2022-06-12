@@ -1,9 +1,9 @@
 <template>
-  <div style="display: flex; height: 100%">
+  <div style="display: flex; height: 100vh">
     <div
       style="
-        min-width: 300px;
-        background-color: gold;
+        min-width: 250px;
+        background-color: #cccef9;
         display: flex;
         flex-direction: column;
         padding: 40px;
@@ -12,20 +12,31 @@
     >
       <div>
         <div style="text-align: center">
-          <img src="../assets/svg/smartpay.svg" style="height: 30px" />
+          <img
+            src="../assets/svg/smartpay.svg"
+            style="height: 100%; width: 175px"
+          />
         </div>
       </div>
 
-      <div style="flex-grow: 1">
+      <div
+        style="
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        "
+      >
         <ul>
-          <li>
+          <li style="">
             <router-link
               to="/home"
               v-bind:style="{
                 fontWeight: this.$route.path === '/Home' ? 'bolder' : '',
               }"
               ><div style="display: flex; flex-direction: row">
-                <img src="../assets/svg/home.svg" alt="" />Home
+                <img src="../assets/svg/home.svg" alt="" />
+                <span style="padding: 10px">Home</span>
               </div>
             </router-link>
           </li>
@@ -39,7 +50,10 @@
                     : '',
               }"
               ><div style="display: flex; flex-direction: row">
-                <img src="../assets/svg/home.svg" alt="" />Create Client
+                <img src="../assets/svg/customer.svg" alt="" /><span
+                  style="padding: 10px"
+                  >Create Client</span
+                >
               </div></router-link
             >
           </li>
@@ -53,7 +67,10 @@
                     : '',
               }"
               ><div style="display: flex; flex-direction: row">
-                <img src="../assets/svg/home.svg" alt="" />Manage Clients
+                <img src="../assets/svg/management.svg" alt="" /><span
+                  style="padding: 10px"
+                  >Manage Clients</span
+                >
               </div></router-link
             >
           </li>
@@ -65,7 +82,10 @@
                   this.$route.path === '/launchpad/reports' ? 'bolder' : '',
               }"
               ><div style="display: flex; flex-direction: row">
-                <img src="../assets/svg/home.svg" alt="" />Reports
+                <img src="../assets/svg/reports.svg" alt="" /><span
+                  style="padding: 10px"
+                  >Reports</span
+                >
               </div></router-link
             >
           </li>
@@ -77,7 +97,10 @@
                   this.$route.path === '/launchpad/dashboard' ? 'bolder' : '',
               }"
               ><div style="display: flex; flex-direction: row">
-                <img src="../assets/svg/home.svg" alt="" />Dashboard
+                <img src="../assets/svg/dashboard.svg" alt="" /><span
+                  style="padding: 10px"
+                  >Dashboard</span
+                >
               </div></router-link
             >
           </li>
@@ -110,7 +133,9 @@
       </div>
     </div>
 
-    <div style="padding: 20px 30px; box-sizing: border-box; flex-grow: 1">
+    <div
+      style="background-color: #eeeeee; box-sizing: border-box; flex-grow: 1"
+    >
       <router-view></router-view>
     </div>
   </div>
