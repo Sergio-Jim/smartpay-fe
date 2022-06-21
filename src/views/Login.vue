@@ -76,6 +76,14 @@
                 v-model="password"
               />
             </div>
+
+            <!-- reCapthca -->
+            <div class="flex flex-row justify-center mb-4">
+              <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              </form>
+            </div>
+
             <div class="flex w-24 m-auto">
               <button
                 class="

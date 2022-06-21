@@ -1,0 +1,7 @@
+#2e004b; dark purple
+rgb(204 206 249) or #CCCEF9; side menu color
+#eeeeee; main page background
+#D8CD22; submit button color
+
+tailwind css
+gold; submit button color

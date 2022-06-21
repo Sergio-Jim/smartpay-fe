@@ -11,83 +11,89 @@
         margin-bottom: 50px;
       "
     >
-      <button
-        class="
-          bg-yellow-400
-          hover:bg-gray-200
-          text-gray-500
-          py-2
-          px-4
-          border border-yellow-400
-          rounded-lg
-          focus:outline-none focus:shadow-outline
-          w-48
-          h-56
-        "
-        type="button"
-      >
-        <div
-          style="display: flex; flex-direction: row; justify-content: center"
+      <router-link to="/launchpad/createclient">
+        <button
+          class="
+            bg-yellow-400
+            hover:bg-gray-200
+            text-gray-500
+            py-2
+            px-4
+            border border-yellow-400
+            rounded-lg
+            focus:outline-none focus:shadow-outline
+            w-48
+            h-56
+          "
+          type="button"
         >
-          <img
-            src="../../assets/svg/customer.svg"
-            style="width: 120px; height: 100%; margin-bottom: 25px"
-          />
-        </div>
-        <span>CREATE CLIENTS</span>
-      </button>
+          <div
+            style="display: flex; flex-direction: row; justify-content: center"
+          >
+            <img
+              src="../../assets/svg/customer.svg"
+              style="width: 120px; height: 100%; margin-bottom: 25px"
+            />
+          </div>
+          <span>CREATE CLIENTS</span>
+        </button>
+      </router-link>
 
-      <button
-        class="
-          bg-yellow-400
-          hover:bg-gray-200
-          text-gray-500
-          py-2
-          px-4
-          border border-yellow-400
-          rounded-lg
-          focus:outline-none focus:shadow-outline
-          w-48
-          h-56
-        "
-        type="button"
-      >
-        <div
-          style="display: flex; flex-direction: row; justify-content: center"
+      <router-link to="/launchpad/manageclients">
+        <button
+          class="
+            bg-yellow-400
+            hover:bg-gray-200
+            text-gray-500
+            py-2
+            px-4
+            border border-yellow-400
+            rounded-lg
+            focus:outline-none focus:shadow-outline
+            w-48
+            h-56
+          "
+          type="button"
         >
-          <img
-            src="../../assets/svg/management.svg"
-            style="width: 120px; height: 100%; margin-bottom: 25px"
-          />
-        </div>
-        <span>MANAGE CLIENTS</span>
-      </button>
+          <div
+            style="display: flex; flex-direction: row; justify-content: center"
+          >
+            <img
+              src="../../assets/svg/management.svg"
+              style="width: 120px; height: 100%; margin-bottom: 25px"
+            />
+          </div>
+          <span>MANAGE CLIENTS</span>
+        </button>
+      </router-link>
 
-      <button
-        class="
-          bg-yellow-400
-          hover:bg-gray-200
-          text-gray-500
-          py-2
-          px-4
-          border border-yellow-400
-          rounded-lg
-          focus:outline-none focus:shadow-outline
-          w-48
-          h-56
-        "
-        type="button"
-      >
-        <div
-          style="display: flex; flex-direction: row; justify-content: center"
+      <router-link to="/launchpad/reports">
+        <button
+          class="
+            bg-yellow-400
+            hover:bg-gray-200
+            text-gray-500
+            py-2
+            px-4
+            border border-yellow-400
+            rounded-lg
+            focus:outline-none focus:shadow-outline
+            w-48
+            h-56
+          "
+          type="button"
         >
-          <img
-            src="../../assets/svg/reports.svg"
-            style="width: 120px; height: 100%; margin-bottom: 25px"
-          />
-        </div>
-        <span>VIEW REPORTS</span>
-      </button>
+          <div
+            style="display: flex; flex-direction: row; justify-content: center"
+          >
+            <img
+              src="../../assets/svg/reports.svg"
+              style="width: 120px; height: 100%; margin-bottom: 25px"
+            />
+          </div>
+          <span>VIEW REPORTS</span>
+        </button>
+      </router-link>
     </div>
 
     <div style="display: flex; flex-direction: row; justify-content: center">

@@ -5,6 +5,9 @@ import Home from "../views/launchpad/Home.vue";
 import CreateClient from "../views/launchpad/CreateClient.vue";
 import ManageClients from "../views/launchpad/ManageClients.vue";
 import Reports from "../views/launchpad/Reports.vue";
+import CalendarReport from "../views/launchpad/reports/CalendarReport.vue";
+import CreateReport from "../views/launchpad/reports/CreateReport.vue";
+import GenerateReport from "../views/launchpad/reports/GenerateReport.vue";
 import Dashboard from "../views/launchpad/Dashboard.vue";
 
 const routes = [
@@ -42,8 +45,21 @@ const routes = [
         component: ManageClients,
       },
       {
-        path: "reports",
+        path: "/launchpad/reports",
+        name: "Reports",
         component: Reports,
+      },
+      {
+        path: "/launchpad/reports/calendar-report",
+        component: CalendarReport,
+      },
+      {
+        path: "/launchpad/reports/create-report",
+        component: CreateReport,
+      },
+      {
+        path: "/launchpad/reports/generate-report",
+        component: GenerateReport,
       },
       {
         path: "dashboard",
