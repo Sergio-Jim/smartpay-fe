@@ -62,8 +62,8 @@
             style="display: flex; flex-direction: row; justify-content: center"
           >
             <img
-              src="../../assets/create-report.png"
-              style="width: 100px; height: 100%; margin-bottom: 25px"
+              src="../../assets/svg/create-report.svg"
+              style="width: 120px; height: 100%; margin-bottom: 25px"
             />
           </div>
           <span>CREATE REPORT</span>
@@ -90,7 +90,7 @@
             style="display: flex; flex-direction: row; justify-content: center"
           >
             <img
-              src="../../assets/download-chart-report.png"
+              src="../../assets/svg/download-chart-report.svg"
               style="width: 120px; height: 100%; margin-bottom: 25px"
             />
           </div>

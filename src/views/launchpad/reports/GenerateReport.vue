@@ -1,9 +1,13 @@
 <template>
   <div style="padding: 20px 30px">
     <div style="display: flex; flex-direction: row; justify-content: center">
-      <div style="display: flex; flex-direction: row">
-        <img src="../../../assets/svg/download.svg" alt="" />
-        <span style="padding: 10px; font-size: xx-large">Generate Report</span>
+      <div style="display: flex; flex-direction: row; padding: 10px">
+        <img
+          style="width: 68px; height: 48px"
+          src="../../../assets/svg/download-chart-report.svg"
+          alt=""
+        />
+        <span style="font-size: xx-large">Generate Report</span>
       </div>
     </div>
     <div style="display: flex; flex-direction: row; justify-content: center">

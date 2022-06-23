@@ -1,20 +1,43 @@
 <template>
   <div style="padding: 20px 30px">
     <div style="display: flex; flex-direction: row; justify-content: center">
-      <div style="display: flex; flex-direction: row">
-        <img src="../../../assets/svg/generatereport.svg" alt="" />
-        <span style="padding: 10px; font-size: xx-large">Create Report</span>
+      <div style="display: flex; flex-direction: row; padding: 10px">
+        <img
+          style="width: 68px; height: 48px"
+          src="../../../assets/svg/create-report.svg"
+          alt=""
+        />
+        <span style="font-size: xx-large">Create Report</span>
       </div>
     </div>
+
+    <!-- body -->
     <div style="display: flex; flex-direction: row; justify-content: center">
-      <h1 style="margin: 40px">To Be Active During Beta Testing</h1>
+      <!-- body begins -->
+      <div class="flex">
+        <litepie-datepicker v-model="dateValue"></litepie-datepicker>
+      </div>
+      <!-- body ends -->
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
+import LitepieDatepicker from "litepie-datepicker";
+
 export default {
   name: "CreateReport",
+  components: {
+    LitepieDatepicker,
+  },
+  setup() {
+    const dateValue = ref([]);
+
+    return {
+      dateValue,
+    };
+  },
 };
 </script>
 

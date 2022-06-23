@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "dayjs": "^1.11.3",
+    "litepie-datepicker": "^1.0.14",
     "vue": "^3.2.13",
+    "vue-datepicker-ui": "^2.3.0",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
