@@ -1,7 +1,11 @@
 <template>
   <div
-    class="bg-[url(./assets/back.png)]"
-    style="display: flex; height: 100vh; overflow-y: auto"
+    :style="{
+      display: 'flex',
+      height: '100vh',
+      'overflow-y': 'auto',
+      'background-image': `url(${require('@/assets/back.png')})`,
+    }"
   >
     <!-- left side of page -->
     <div
@@ -60,7 +64,7 @@
                 class="
                   shadow
                   appearance-none
-                  border border-red-500
+                  border
                   rounded
                   w-full
                   py-2
@@ -100,13 +104,7 @@
                 v-on:click="goToHome()"
                 type="button"
               >
-                <!-- <vue-loaders
-                  v-if="this.isLoading"
-                  name="line-scale"
-                  color="white"
-                  scale="0.5"
-                ></vue-loaders> -->
-                <!-- <div class="py-2" v-else>Log in</div> -->
+                <div class="py-1">Log in</div>
               </button>
             </div>
           </form>

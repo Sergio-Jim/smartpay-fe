@@ -232,7 +232,7 @@
                   color="white"
                   scale="0.5"
                 ></vue-loaders> -->
-          <!-- <div class="py-2" v-else>Log in</div> -->
+          <div class="py-1">Create</div>
         </button>
       </div>
     </form>

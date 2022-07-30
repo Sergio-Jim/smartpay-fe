@@ -6,97 +6,36 @@
         <span style="padding: 10px; font-size: xx-large">Reports</span>
       </div>
     </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 50px;
-      "
-    >
-      <router-link to="/launchpad/reports/calendar-report">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
-            <img
-              src="../../assets/svg/reports.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
-            />
+    <div class="link-group">
+      <div class="button">
+        <router-link to="/launchpad/reports/calendar-report">
+          <div class="link-item active">
+            <img class="link-icon" src="../../assets/svg/reports.svg" />
+            <span class="link-text">CALENDAR REPORTS</span>
           </div>
-          <span>CALENDAR REPORTS</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
 
-      <router-link to="/launchpad/reports/create-report">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
-            <img
-              src="../../assets/svg/create-report.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
-            />
+      <div class="button">
+        <router-link to="/launchpad/reports/create-report">
+          <div class="link-item active">
+            <img class="link-icon" src="../../assets/svg/create-report.svg" />
+            <span class="link-text">CREATE REPORTS</span>
           </div>
-          <span>CREATE REPORT</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
 
-      <router-link to="/launchpad/reports/generate-report">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
+      <div class="button">
+        <router-link to="/launchpad/reports/generate-report">
+          <div class="link-item active">
             <img
+              class="link-icon"
               src="../../assets/svg/download-chart-report.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
             />
+            <span class="link-text">GENERATED REPORTS</span>
           </div>
-          <span>GENERATED REPORTS</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -108,4 +47,44 @@ export default {
 </script>
 
 <style scoped>
+.link-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 40px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  color: #2e004b;
+  /* position: absolute; */
+}
+
+.link-item:hover {
+  background-color: white;
+  transition: 100ms linear;
+  box-shadow: 0px 0px 20px gray;
+  margin-top: -5px;
+  height: 210px;
+  width: 210px;
+}
+
+.link-group {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 200px;
+  min-width: 800px;
+  margin-bottom: 50px;
+}
+
+.button {
+  max-width: 200px;
+  position: relative;
+}
 </style>

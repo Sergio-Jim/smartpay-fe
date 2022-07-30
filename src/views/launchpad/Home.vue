@@ -3,97 +3,33 @@
     <div style="display: flex; flex-direction: row; justify-content: center">
       <img src="../../assets/svg/what.svg" style="margin-bottom: 50px" />
     </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 50px;
-      "
-    >
-      <router-link to="/launchpad/createclient">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
-            <img
-              src="../../assets/svg/customer.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
-            />
+    <div class="link-group">
+      <div class="button">
+        <router-link to="/launchpad/createclient">
+          <div class="link-item active">
+            <img class="link-icon" src="../../assets/svg/customer.svg" />
+            <span class="link-text">CREATE CLIENTS</span>
           </div>
-          <span>CREATE CLIENTS</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
 
-      <router-link to="/launchpad/manageclients">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
-            <img
-              src="../../assets/svg/management.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
-            />
+      <div class="button">
+        <router-link to="/launchpad/manageclients">
+          <div class="link-item active">
+            <img class="link-icon" src="../../assets/svg/management.svg" />
+            <span class="link-text">MANAGE CLIENTS</span>
           </div>
-          <span>MANAGE CLIENTS</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
 
-      <router-link to="/launchpad/reports">
-        <button
-          class="
-            bg-yellow-400
-            hover:bg-gray-200
-            text-gray-500
-            py-2
-            px-4
-            border border-yellow-400
-            rounded-lg
-            focus:outline-none focus:shadow-outline
-            w-48
-            h-56
-          "
-          type="button"
-        >
-          <div
-            style="display: flex; flex-direction: row; justify-content: center"
-          >
-            <img
-              src="../../assets/svg/reports.svg"
-              style="width: 120px; height: 100%; margin-bottom: 25px"
-            />
+      <div class="button">
+        <router-link to="/launchpad/reports">
+          <div class="link-item active">
+            <img class="link-icon" src="../../assets/svg/reports.svg" />
+            <span class="link-text">VIEW REPORTS</span>
           </div>
-          <span>VIEW REPORTS</span>
-        </button>
-      </router-link>
+        </router-link>
+      </div>
     </div>
 
     <div style="display: flex; flex-direction: row; justify-content: center">
@@ -109,4 +45,44 @@ export default {
 </script>
 
 <style scoped>
+.link-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 40px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  color: #2e004b;
+  /* position: absolute; */
+}
+
+.link-item:hover {
+  background-color: white;
+  transition: 100ms linear;
+  box-shadow: 0px 0px 20px gray;
+  margin-top: -5px;
+  height: 210px;
+  width: 210px;
+}
+
+.link-group {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 200px;
+  min-width: 800px;
+  margin-bottom: 50px;
+}
+
+.button {
+  max-width: 200px;
+  position: relative;
+}
 </style>
