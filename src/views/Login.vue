@@ -119,7 +119,7 @@ export default {
   name: "Login",
   methods: {
     goToHome() {
-      this.$router.push("/launchpad");
+      this.$router.push("/loginVerification");
     },
   },
 };

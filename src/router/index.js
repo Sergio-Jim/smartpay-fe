@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Login from "../views/Login.vue";
+import LoginVerification from "../views/LoginVerification.vue";
 import Launchpad from "../views/Launchpad.vue";
 import Home from "../views/launchpad/Home.vue";
 import CreateClient from "../views/launchpad/CreateClient.vue";
@@ -19,6 +20,12 @@ const routes = [
     path: "/login",
     name: "login",
     component: Login,
+    props: true,
+  },
+  {
+    path: "/loginVerification",
+    name: "LoginVerification",
+    component: LoginVerification,
     props: true,
   },
   {

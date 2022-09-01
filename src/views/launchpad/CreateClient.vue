@@ -33,6 +33,26 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
+              id="contractID"
+              type="text"
+              placeholder="Contract ID"
+            />
+          </div>
+
+          <div style="margin-bottom: 8px">
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
               id="clientID"
               type="text"
               placeholder="Client ID"
@@ -53,9 +73,29 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="name"
+              id="firstname"
               type="text"
-              placeholder="Name"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div style="margin-bottom: 8px">
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="surname"
+              type="text"
+              placeholder="Surname"
             />
           </div>
 
@@ -223,7 +263,7 @@
             w-full
             focus:outline-none focus:shadow-outline
           "
-          v-on:click="goToHome()"
+          v-on:click="nothing"
           type="button"
         >
           <!-- <vue-loaders
