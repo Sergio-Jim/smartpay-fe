@@ -3,36 +3,36 @@
     <div style="display: flex; flex-direction: row; justify-content: center">
       <div style="display: flex; flex-direction: row; margin-bottom: 50px">
         <img src="../../assets/svg/reports.svg" alt="" />
-        <span style="padding: 10px; font-size: xx-large">Reports</span>
+        <span style="padding: 10px; font-size: xx-large">Debit Orders</span>
       </div>
     </div>
     <div class="link-group">
       <div class="button">
-        <router-link to="/launchpad/reports/calendar-report">
+        <router-link to="/launchpad/debitorders/calendar">
           <div class="link-item active">
             <img class="link-icon" src="../../assets/svg/reports.svg" />
-            <span class="link-text">CALENDAR REPORTS</span>
+            <span class="link-text">CALENDAR</span>
           </div>
         </router-link>
       </div>
 
       <div class="button">
-        <router-link to="/launchpad/reports/create-report">
+        <router-link to="/launchpad/debitorders/once-off-debit">
           <div class="link-item active">
             <img class="link-icon" src="../../assets/svg/create-report.svg" />
-            <span class="link-text">CREATE REPORTS</span>
+            <span class="link-text">ONCE-OFF DEBIT</span>
           </div>
         </router-link>
       </div>
 
       <div class="button">
-        <router-link to="/launchpad/reports/generate-report">
+        <router-link to="/launchpad/debitorders/generate-report">
           <div class="link-item active">
             <img
               class="link-icon"
               src="../../assets/svg/download-chart-report.svg"
             />
-            <span class="link-text">GENERATED REPORTS</span>
+            <span class="link-text">DOWNLOAD DEBIT REPORTS</span>
           </div>
         </router-link>
       </div>
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  name: "Reports",
+  name: "DebitOrders",
 };
 </script>
 

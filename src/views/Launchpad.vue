@@ -76,15 +76,15 @@
           </li>
           <li>
             <router-link
-              to="/launchpad/reports"
+              to="/launchpad/debitorders"
               v-bind:style="{
                 fontWeight:
-                  this.$route.path === '/launchpad/reports' ? 'bolder' : '',
+                  this.$route.path === '/launchpad/debitorders' ? 'bolder' : '',
               }"
               ><div style="display: flex; flex-direction: row">
                 <img src="../assets/svg/reports.svg" alt="" /><span
                   style="padding: 10px"
-                  >Reports</span
+                  >Debit Orders</span
                 >
               </div></router-link
             >

@@ -5,10 +5,10 @@ import Launchpad from "../views/Launchpad.vue";
 import Home from "../views/launchpad/Home.vue";
 import CreateClient from "../views/launchpad/CreateClient.vue";
 import ManageClients from "../views/launchpad/ManageClients.vue";
-import Reports from "../views/launchpad/Reports.vue";
-import CalendarReport from "../views/launchpad/reports/CalendarReport.vue";
-import CreateReport from "../views/launchpad/reports/CreateReport.vue";
-import GenerateReport from "../views/launchpad/reports/GenerateReport.vue";
+import DebitOrders from "../views/launchpad/DebitOrders.vue";
+import Calendar from "../views/launchpad/debitorders/Calendar.vue";
+import OnceOffDebit from "../views/launchpad/debitorders/OnceOffDebit.vue";
+import GenerateReport from "../views/launchpad/debitorders/GenerateReport.vue";
 import Dashboard from "../views/launchpad/Dashboard.vue";
 
 const routes = [
@@ -52,20 +52,20 @@ const routes = [
         component: ManageClients,
       },
       {
-        path: "/launchpad/reports",
-        name: "Reports",
-        component: Reports,
+        path: "/launchpad/debitorders",
+        name: "DebitOrders",
+        component: DebitOrders,
       },
       {
-        path: "/launchpad/reports/calendar-report",
-        component: CalendarReport,
+        path: "/launchpad/debitorders/calendar",
+        component: Calendar,
       },
       {
-        path: "/launchpad/reports/create-report",
-        component: CreateReport,
+        path: "/launchpad/debitorders/once-off-debit",
+        component: OnceOffDebit,
       },
       {
-        path: "/launchpad/reports/generate-report",
+        path: "/launchpad/debitorders/generate-report",
         component: GenerateReport,
       },
       {

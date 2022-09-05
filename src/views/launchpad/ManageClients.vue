@@ -95,12 +95,19 @@
         </form>
       </div>
     </div>
-    <div style="display: flex; flex-direction: row">
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 12%;
+      "
+    >
       <div
         style="
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: flex-start;
           margin-top: 50px;
         "
       >
