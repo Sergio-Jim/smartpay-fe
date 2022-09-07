@@ -37,12 +37,204 @@
     </div>
 
     <!-- body -->
-    <div style="display: flex; flex-direction: row; justify-content: center">
-      <!-- body begins -->
-      <div class="flex">
-        <litepie-datepicker v-model="dateValue"></litepie-datepicker>
-      </div>
-      <!-- body ends -->
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        width: 100%;
+        overflow-y: scroll;
+      "
+    >
+      <form action="">
+        <div style="display: flex; flex-direction: column; margin-top: 50px">
+          <span style="display: flex; font-size: x-large"
+            >1. Who would you like to debit?</span
+          >
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> First Name </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Surname </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="Surname"
+              type="text"
+              placeholder="Surname"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Country </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="country"
+              type="text"
+              placeholder="Country"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Identification Number </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="identificationNumber"
+              type="text"
+              placeholder="Identification Number"
+            />
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-top: 50px">
+          <span style="display: flex; font-size: x-large">2. Bank Details</span>
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> First Name </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Surname </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="Surname"
+              type="text"
+              placeholder="Surname"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Country </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="country"
+              type="text"
+              placeholder="Country"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Identification Number </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="identificationNumber"
+              type="text"
+              placeholder="Identification Number"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Identification Number </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="identificationNumber"
+              type="text"
+              placeholder="Identification Number"
+            />
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </template>
@@ -63,8 +255,24 @@ export default {
       dateValue,
     };
   },
+  methods: {
+    switchVisible() {
+      if (document.getElementById("Div1")) {
+        if (document.getElementById("Div1").style.display == "none") {
+          document.getElementById("Div1").style.display = "block";
+          document.getElementById("Div2").style.display = "none";
+        } else {
+          document.getElementById("Div1").style.display = "none";
+          document.getElementById("Div2").style.display = "block";
+        }
+      }
+    },
+  },
 };
 </script>
 
 <style scoped>
+#Div2 {
+  display: none;
+}
 </style>

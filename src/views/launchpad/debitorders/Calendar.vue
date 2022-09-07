@@ -1020,7 +1020,9 @@
       </div>
     </div>
     <div>
-      <a href="https://kkvinvbrb--github--3000.local.webcontainer.io"
+      <a
+        style="font-weight: 600; color: #2e004b"
+        href="https://kkvinvbrb--github--3000.local.webcontainer.io"
         >Click here to view working design. It should look like this.</a
       >
       <span style="display: flex; justify-content: center"

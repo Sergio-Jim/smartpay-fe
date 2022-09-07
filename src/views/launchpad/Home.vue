@@ -1,13 +1,13 @@
 <template>
   <div style="padding: 20px 30px">
     <div style="display: flex; flex-direction: row; justify-content: center">
-      <img src="../../assets/svg/what.svg" style="margin-bottom: 50px" />
+      <img src="@/assets/svg/what.svg" style="margin-bottom: 50px" />
     </div>
     <div class="link-group">
       <div class="button">
         <router-link to="/launchpad/createclient">
           <div class="link-item active">
-            <img class="link-icon" src="../../assets/svg/customer.svg" />
+            <img class="link-icon" src="@/assets/svg/customer.svg" />
             <span class="link-text">CREATE CLIENTS</span>
           </div>
         </router-link>
@@ -16,17 +16,17 @@
       <div class="button">
         <router-link to="/launchpad/manageclients">
           <div class="link-item active">
-            <img class="link-icon" src="../../assets/svg/management.svg" />
+            <img class="link-icon" src="@/assets/svg/management.svg" />
             <span class="link-text">MANAGE CLIENTS</span>
           </div>
         </router-link>
       </div>
 
       <div class="button">
-        <router-link to="/launchpad/reports">
+        <router-link to="/launchpad/debitorders">
           <div class="link-item active">
-            <img class="link-icon" src="../../assets/svg/reports.svg" />
-            <span class="link-text">VIEW REPORTS</span>
+            <img class="link-icon" src="@/assets/svg/reports.svg" />
+            <span class="link-text">DEBIT ORDERS</span>
           </div>
         </router-link>
       </div>
