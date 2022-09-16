@@ -135,7 +135,7 @@
         <div style="display: flex; flex-direction: column; margin-top: 50px">
           <span style="display: flex; font-size: x-large">2. Bank Details</span>
           <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
-            <label class="py-2 px-3"> First Name </label>
+            <label class="py-2 px-3"> Account Type </label>
             <input
               class="
                 shadow
@@ -148,14 +148,14 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="firstName"
+              id="accountType"
               type="text"
-              placeholder="First Name"
+              placeholder="Account Type"
             />
           </div>
 
           <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
-            <label class="py-2 px-3"> Surname </label>
+            <label class="py-2 px-3"> Bank </label>
             <input
               class="
                 shadow
@@ -168,14 +168,31 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="Surname"
+              id="bank"
               type="text"
-              placeholder="Surname"
+              placeholder="Bank"
+            />
+            <label class="py-2 px-3"> OR </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="bicCode"
+              type="text"
+              placeholder="BIC Code"
             />
           </div>
 
           <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
-            <label class="py-2 px-3"> Country </label>
+            <label class="py-2 px-3"> Account Name </label>
             <input
               class="
                 shadow
@@ -188,14 +205,14 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="country"
+              id="accountName"
               type="text"
-              placeholder="Country"
+              placeholder="Account Name"
             />
           </div>
 
           <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
-            <label class="py-2 px-3"> Identification Number </label>
+            <label class="py-2 px-3"> Account Number </label>
             <input
               class="
                 shadow
@@ -208,14 +225,39 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="identificationNumber"
+              id="accountNumber"
               type="text"
-              placeholder="Identification Number"
+              placeholder="Account Number"
+            />
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-top: 50px">
+          <span style="display: flex; font-size: x-large"
+            >3. Payment Information</span
+          >
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Amount N$ </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="amount"
+              type="text"
+              placeholder="Amount"
             />
           </div>
 
           <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
-            <label class="py-2 px-3"> Identification Number </label>
+            <label class="py-2 px-3"> Debtor Reference </label>
             <input
               class="
                 shadow
@@ -228,10 +270,129 @@
                 leading-tight
                 focus:outline-none focus:shadow-outline
               "
-              id="identificationNumber"
+              id="debtorReference"
               type="text"
-              placeholder="Identification Number"
+              placeholder="Debtor Reference"
             />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Refernce </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="reference"
+              type="text"
+              placeholder="Reference"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Reason for Payment </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="reasonForPayment"
+              type="text"
+              placeholder="Reason for Payment"
+            />
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-top: 50px">
+          <span style="display: flex; font-size: x-large"
+            >4. Proof of Payment</span
+          >
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Email Address </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="emailAddress"
+              type="text"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 8px; margin-bottom: 8px">
+            <label class="py-2 px-3"> Addressed To </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                rounded-3xl
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="addressedTo"
+              type="text"
+              placeholder="Addressed To"
+            />
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <label class="flex flex-row py-2 px-3"> Debit Date </label>
+          <div style="display: flex; flex-direction: row">
+            <div class="w-3/5">
+              <litepie-datepicker
+                :formatter="formatter"
+                :auto-apply="false"
+                as-single
+                v-model="dateValue"
+              ></litepie-datepicker>
+            </div>
+            <div class="ml-4">
+              <button
+                class="
+                  bg-gold
+                  border border-gray-700
+                  transition-colors
+                  duration-700
+                  transform
+                  hover:bg-yellow-400
+                  text-gray-700
+                  px-4
+                  mty-8
+                  rounded-lg
+                  focus:outline-none focus:shadow-outline
+                "
+                type="button"
+              >
+                <div class="py-2">Schedule Debit</div>
+              </button>
+            </div>
           </div>
         </div>
       </form>
@@ -250,9 +411,14 @@ export default {
   },
   setup() {
     const dateValue = ref([]);
+    const formatter = ref({
+      date: "DD MMMM YYYY",
+      month: "MMMM",
+    });
 
     return {
       dateValue,
+      formatter,
     };
   },
   methods: {
