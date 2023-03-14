@@ -19,7 +19,7 @@
           "
         >
           <h4 style="margin-bottom: 5px">Client Details</h4>
-          <div style="margin-bottom: 8px">
+          <!-- <div style="margin-bottom: 8px">
             <input
               class="
                 shadow
@@ -37,7 +37,7 @@
               type="text"
               placeholder="Contract ID"
             />
-          </div>
+          </div> -->
 
           <div style="margin-bottom: 8px">
             <input

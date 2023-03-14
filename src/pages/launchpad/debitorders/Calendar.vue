@@ -915,7 +915,7 @@
         >
           <div class="px-4">
             <div class="border-b pb-4 border-gray-400 border-dashed">
-              <p
+              <!-- <p
                 class="
                   text-xs
                   font-light
@@ -949,7 +949,18 @@
                 "
               >
                 Discussion on UX sprint and Wireframe review
-              </p>
+              </p> -->
+              <div class="client-background-btn">
+                <div class="client-initial-icon">C</div>
+                <div class="client-info">
+                  <p style="font-size: 15px; margin-bottom: 10px">
+                    Client Name
+                  </p>
+                  <div>
+                    CN12345 | Bank of Namibia | 2 contracts | N$105 000 000.00
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="border-b pb-4 border-gray-400 border-dashed pt-5">
               <p
@@ -1021,7 +1032,12 @@
     </div>
     <div>
       <a
-        style="display: flex; justify-content: center; font-weight: 600; color: #2e004b"
+        style="
+          display: flex;
+          justify-content: center;
+          font-weight: 600;
+          color: #2e004b;
+        "
         href="https://stackblitz.com/github/samselikoff/2022-05-11-tailwind-ui-interactive-calendar?file=pages%2Findex.jsx"
         >Click here to view working design. It should look like this.</a
       >
@@ -1040,4 +1056,40 @@ export default {
 </script>
 
 <style scoped>
+.client-background-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: white;
+  margin: 10px 10px;
+  width: 470px;
+  height: 70px;
+  align-items: center;
+  border-radius: 25px;
+  color: #2e004b;
+  max-width: 470px;
+}
+
+.client-initial-icon {
+  width: 52px;
+  height: 52px;
+  background-color: #d8cd22;
+  color: white;
+  border-radius: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.client-info {
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 </style>

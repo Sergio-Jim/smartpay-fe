@@ -10,6 +10,12 @@ import Calendar from "./pages/launchpad/debitorders/Calendar.vue";
 import OnceOffDebit from "./pages/launchpad/debitorders/OnceOffDebit.vue";
 import GenerateReport from "./pages/launchpad/debitorders/GenerateReport.vue";
 import Dashboard from "./pages/launchpad/Dashboard.vue";
+import AdminLogin from "./pages/admin/AdminLogin.vue";
+import AdminDashboard from "./pages/admin/AdminDashboard.vue";
+import DashboardHome from "./pages/admin/DashboardHome.vue";
+import RegisterBusiness from "./pages/admin/RegisterBusiness.vue";
+import ViewBusinesses from "./pages/admin/ViewBusinesses.vue";
+import AdminSettings from "./pages/admin/AdminSettings.vue";
 
 const routes = [
   {
@@ -71,6 +77,51 @@ const routes = [
       {
         path: "dashboard",
         component: Dashboard,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    name: "AdminLogin",
+    component: AdminLogin,
+  },
+  {
+    path: "/admin/dashboard",
+    name: "AdminDashboard",
+    component: AdminDashboard,
+    props: true,
+    children: [
+      {
+        // redirect to default home page
+        path: "",
+        component: DashboardHome,
+      },
+      {
+        path: "/admin/dashboard/",
+        component: DashboardHome,
+      },
+      {
+        path: "/admin/dashboard/register",
+        name: "RegisterBusiness",
+        component: RegisterBusiness,
+      },
+      {
+        path: "/admin/dashboard/businesses",
+        name: "ViewBusinesses",
+        component: ViewBusinesses,
+        props: true,
+        // children: [
+        //   {
+        //     path: "/admin/dashboard/businesses",
+        //     name: "ViewBusinesses",
+        //   liki  component: ViewBusinesses,
+        //   },
+        // ],
+      },
+      {
+        path: "/admin/dashboard/settings",
+        name: "AdminSettings",
+        component: AdminSettings,
       },
     ],
   },
