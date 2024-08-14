@@ -1,3 +1,4 @@
+/*
 module.exports = {
   client: {
     service: {
@@ -9,3 +10,4 @@ module.exports = {
     includes: ["src/**/*.vue", "src/**/*.js"],
   },
 };
+/*
