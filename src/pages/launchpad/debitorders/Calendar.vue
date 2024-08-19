@@ -1038,7 +1038,7 @@
           font-weight: 600;
           color: #2e004b;
         "
-        href="https://stackblitz.com/github/samselikoff/2022-05-11-tailwind-ui-interactive-calendar?file=pages%2Findex.jsx"
+        href="https://calendarconcept.netlify.app/"
         >Click here to view working design. It should look like this.</a
       >
       <span style="display: flex; justify-content: center"
