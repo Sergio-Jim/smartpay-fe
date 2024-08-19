@@ -914,7 +914,7 @@
           "
         >
           <div class="px-4">
-            <div class="border-b pb-4 border-gray-400 border-dashed">
+            <div class="flex justify-evenly border-b pb-4 border-gray-400 border-dashed">
               <!-- <p
                 class="
                   text-xs
@@ -957,7 +957,7 @@
                     Client Name
                   </p>
                   <div>
-                    CN12345 | Bank of Namibia | 2 contracts | N$105 000 000.00
+                    CN12345 | 2 contracts 
                   </div>
                 </div>
               </div>
