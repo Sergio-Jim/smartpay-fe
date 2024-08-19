@@ -104,6 +104,7 @@
                     "
                     style="height: 40px"
                     type="button"
+                    v-on:click="goToHome()"
                   >
                     <vue-loaders
                       v-if="this.loading"
@@ -127,3 +128,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "adminLogin",
+  methods: {
+    goToHome() {
+      this.$router.push("/admin/dashboard");
+    },
+  },
+};
+</script>

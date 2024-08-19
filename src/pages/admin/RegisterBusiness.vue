@@ -117,7 +117,7 @@
         "
       >
         <!-- <img src="../assets/bot_logo.svg" style="height: 100px" /> -->
-        <span style="font-size: 35px; font-weight: 1000">Welcome Back</span>
+        <span style="font-size: 35px; font-weight: 1000">Register A Business</span>
       </div>
     </div>
   </div>

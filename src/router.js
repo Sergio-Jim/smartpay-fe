@@ -97,16 +97,16 @@ const routes = [
         component: DashboardHome,
       },
       {
-        path: "/admin/dashboard/",
+        path: "/dashboard/",
         component: DashboardHome,
       },
       {
-        path: "/admin/dashboard/register",
+        path: "/register",
         name: "RegisterBusiness",
         component: RegisterBusiness,
       },
       {
-        path: "/admin/dashboard/businesses",
+        path: "/businesses",
         name: "ViewBusinesses",
         component: ViewBusinesses,
         props: true,
@@ -119,7 +119,7 @@ const routes = [
         // ],
       },
       {
-        path: "/admin/dashboard/settings",
+        path: "/settings",
         name: "AdminSettings",
         component: AdminSettings,
       },

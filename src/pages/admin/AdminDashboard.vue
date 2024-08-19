@@ -48,7 +48,7 @@
         <ul style="padding: 30% 0; border-right: 2px solid; border-color: red">
           <li v-on:click="showSidebar = false">
             <router-link
-              to="register"
+              to="/register"
               v-bind:style="{
                 fontWeight: this.$route.path === '/register' ? 'bolder' : '',
               }"
@@ -76,7 +76,7 @@
           </li>
           <li v-on:click="showSidebar = false">
             <router-link
-              to="businesses"
+              to="/businesses"
               v-bind:style="{
                 fontWeight:
                   this.$route.path === '/businesses'
@@ -107,7 +107,7 @@
           </li>
           <li v-on:click="showSidebar = false">
             <router-link
-              to="settings"
+              to="/settings"
               v-bind:style="{
                 fontWeight:
                   this.$route.path === '/settings' ? 'bolder' : '',
